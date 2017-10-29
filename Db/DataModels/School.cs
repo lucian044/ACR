@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Db.DataModels
 {
     public class School
-    {
+    { 
 
         [Key]
         public int Id { get; set; }

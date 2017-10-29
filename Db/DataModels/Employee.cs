@@ -17,7 +17,7 @@ namespace Db.DataModels
         public string LastName { get; set; }
         [Required]
         [ForeignKey("School")]
-        public int SchoolID { get; set; }    
+        public int SchoolId { get; set; }    
         [Required]
         [StringLength(255)]
         public string Title { get; set; }
