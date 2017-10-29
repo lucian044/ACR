@@ -26,6 +26,10 @@ namespace Db.DataModels
         public string GradeSubject { get; set; }
         [Required]
         public bool NewEmployee { get; set; }
+        [Required]
+        public bool Active { get; set; }
+        [Required]
+        public Role Role { get; set; }
 
     }
 }
