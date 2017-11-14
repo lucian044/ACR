@@ -6,18 +6,26 @@ import { Http } from '@angular/http';
     templateUrl: './weeks.component.html'
 })
 export class WeeksComponent {
-    public forecasts: WeatherForecast[];
+    test = false;
+    testString = "Luciano"
 
-    constructor(http: Http, @Inject('BASE_URL') baseUrl: string) {
-        http.get(baseUrl + 'api/SampleData/WeatherForecasts').subscribe(result => {
-            this.forecasts = result.json() as WeatherForecast[];
-        }, error => console.error(error));
+    public testMethod(input: string){
+        this.test = !this.test;
+        this.testString = input;
     }
+    
+    // public forecasts: WeatherForecast[];
+
+    // constructor(http: Http, @Inject('BASE_URL') baseUrl: string) {
+    //     http.get(baseUrl + 'api/SampleData/WeatherForecasts').subscribe(result => {
+    //         this.forecasts = result.json() as WeatherForecast[];
+    //     }, error => console.error(error));
+    // }
 }
 
-interface WeatherForecast {
-    dateFormatted: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary: string;
-}
+// interface WeatherForecast {
+//     dateFormatted: string;
+//     temperatureC: number;
+//     temperatureF: number;
+//     summary: string;
+// }

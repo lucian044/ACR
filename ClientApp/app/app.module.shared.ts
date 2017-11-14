@@ -9,6 +9,7 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { WeeksComponent } from './components/weeks/weeks.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { WeekListComponent } from './components/weeks/week-list/week-list.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { CounterComponent } from './components/counter/counter.component';
         NavMenuComponent,
         CounterComponent,
         WeeksComponent,
-        HomeComponent
+        HomeComponent,
+        WeekListComponent
     ],
     imports: [
         CommonModule,
