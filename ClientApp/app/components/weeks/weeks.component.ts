@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { Http } from '@angular/http';
 
 @Component({
@@ -7,12 +8,11 @@ import { Http } from '@angular/http';
 })
 export class WeeksComponent {
     test = false;
-    testString = "Luciano"
+    testString = ""
 
-    public testMethod(input: string){
+    public testMethod(){
         this.test = !this.test;
-        this.testString = input;
-    }
+    } 
     
     // public forecasts: WeatherForecast[];
 
